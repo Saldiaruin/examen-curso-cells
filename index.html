@@ -22,36 +22,43 @@
 	</section>
     
     <main>
-    	<form id="formRegister" class="mx-auto col-5">
+    	<form id="formRegister" class="mx-auto col-5" novalidate>
     		<div class="form-group my-3">
     			<label for="firstName">Nombre:</label>
-    			<input id="firstName" class="form-control" type="text" name="firstName" value="DEMO" required>
+    			<input id="firstName" class="form-control" type="text" name="firstName" value="DEMO NOMBRE" required>
+    			<small id="firstNameHelp" class="form-text bg-danger text-white" hidden>Este campo es obligatorio</small>
     		</div>
     		<div class="form-group my-3">
     			<label for="secondName">Segundo Nombre:</label>
     			<input id="secondName" class="form-control" type="text" name="secondName">
+    			<small id="secondNameHelp" class="form-text bg-danger text-white" hidden>Este campo es obligatorio</small>
     		</div>
     		<div class="form-group my-3">
     			<label for="fatherLastname">Apellido Paterno:</label>
-    			<input id="fatherLastname" class="form-control" type="text" name="fatherLastname" value="DEMO" required>
+    			<input id="fatherLastname" class="form-control" type="text" name="fatherLastname" value="DEMO APELLIDO PATERNO" required>
+    			<small id="fatherLastnameHelp" class="form-text bg-danger text-white" hidden>Este campo es obligatorio</small>
     		</div>
     		<div class="form-group my-3">
     			<label for="motherLastname">Apellido Materno:</label>
-    			<input id="motherLastname" class="form-control" type="text" name="motherLastname" value="DEMO" required>
+    			<input id="motherLastname" class="form-control" type="text" name="motherLastname" value="DEMO APELLIDO MATERNO" required>
+    			<small id="motherLastnameHelp" class="form-text bg-danger text-white" hidden>Este campo es obligatorio</small>
     		</div>
     		<div class="form-group my-3">
     			<label for="phone">Teléfono:</label>
     			<input id="phone" class="form-control" type="text" name="phone" value="DEMO" required>
-    			<small id="phoneHelp" class="form-text bg-danger text-white" hidden>Debe ser un número de 8 a 10 digitos</small>
+    			<small id="phoneHelp2" class="form-text bg-danger text-white" hidden>Debe ser un número de 8 a 10 digitos</small>
+    			<small id="phoneHelp" class="form-text bg-danger text-white" hidden>Este campo es obligatorio</small>
     		</div>
     		<div class="form-group my-3">
     			<label for="address">Dirección:</label>
     			<input id="address" class="form-control" type="text" name="address">
+    			<small id="addressHelp" class="form-text bg-danger text-white" hidden>Este campo es obligatorio</small>
     		</div>
     		<div class="form-group my-3">
     			<label for="postalCode">Codigo Postal:</label>
     			<input id="postalCode" class="form-control" type="text" name="postalCode" value="DEMO" required>
-    			<small id="postalCodeHelp" class="form-text bg-danger text-white" hidden>Debe ser un número de 5 digitos</small>
+    			<small id="postalCodeHelp2" class="form-text bg-danger text-white" hidden>Debe ser un número de 5 digitos</small>
+    			<small id="postalCodeHelp" class="form-text bg-danger text-white" hidden>Este campo es obligatorio</small>
     		</div>
     		<div class="text-center">
     			<button id="btnSubmit" type="submit" class="btn btn-primary my-5">Regístrame!</button>
